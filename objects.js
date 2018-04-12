@@ -8,5 +8,5 @@ function updatePlaylist(playlist, artistName, songTitle) {
   console.log(playlist);
   return playlist;
 }
-
+updatePlaylist(playlist, "Passenger", "All the little lights");
 console.log(playlist);
