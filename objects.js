@@ -5,8 +5,10 @@ var playlist = {
 
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist[artistName] = songTitle;
-  console.log(playlist);
   return playlist;
 }
-updatePlaylist(playlist, "Passenger", "All the little lights");
-console.log(playlist);
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName];
+  return playlist;
+}
